@@ -8,6 +8,10 @@ var cleanCSS = require('gulp-clean-css');
 var del = require('del');
 
 var paths = {
+  html: {
+    src: 'src/**/*.html',
+    dest: 'build/'
+  },
   styles: {
     src: 'src/styles/**/*.less',
     dest: 'build/styles/'
@@ -35,6 +39,11 @@ function clean() {
 /*
  * Define our tasks using plain functions
  */
+function html() {
+    return gulp.src(paths.html.src)
+      .pipe(gulp.dest(paths.html.dest));
+}
+
 function styles() {
   return gulp.src(paths.styles.src)
     .pipe(less())
@@ -64,17 +73,19 @@ function watch() {
   gulp.watch(paths.scripts.src, scripts);
   gulp.watch(paths.styles.src, styles);
   gulp.watch(paths.images.src, images);
+  gulp.watch(paths.html.src, html);
 }
 
 /*
  * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
  */
-var build = gulp.series(clean, gulp.parallel(styles, scripts, images));
+var build = gulp.series(clean, gulp.parallel(html, styles, scripts, images));
 
 /*
  * You can use CommonJS `exports` module notation to declare tasks
  */
 exports.clean = clean;
+exports.html = html;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.watch = watch;
