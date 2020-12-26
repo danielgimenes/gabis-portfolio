@@ -1,10 +1,14 @@
 /* GENERAL */
 
+@gray: #464646;
+@purple: #702F87;
+@white: #FFFFFF;
+
 body {
     padding: 0;
     margin: 0;
     background-color: #F2F4F9;
-    color: #464646;
+    color: @gray;
     font-family: 'Roboto', sans-serif;
     /* hackish */
     width: 100vw;
@@ -52,32 +56,32 @@ strong {
     min-height: 100vh;
     padding-left: 16vw;
     padding-right: 10vw;
-}
 
-.intro h1 {
-    font-weight: 300;
-    margin-top: 40vh;
-    flex: 1;
-    font-size: 36px;
-}
+    h1 {
+        font-weight: 300;
+        margin-top: 40vh;
+        flex: 1;
+        font-size: 36px;
+    }
 
-.intro strong {
-    font-size: 4rem;
+    strong {
+        font-size: 4rem;
+    }
+
+    .content-body {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .projects-button {
-    background-color: #702F87;
+    background-color: @purple;
     color: white;
 }
 
 .download-cv-button {
     background-color: #F1F2F4;
-    color: #702F87;
-}
-
-.intro .content-body {
-    display: flex;
-    flex-direction: row;
+    color: @purple;
 }
 
 .intro-image-container {
@@ -161,7 +165,7 @@ strong {
 
 .about-me button {
     background-color: #702F87;
-    color: white;
+    color: @white;
 }
 
 .about-me-image-container {
@@ -235,8 +239,8 @@ strong {
 /* FOOTER */
 
 footer {
-    color: #FFFFFF;
-    background-color: #702F87;
+    color: @white;
+    background-color: @purple;
     min-height: 50vh;
     padding-left: 10vw;
     padding-top: 10vh;

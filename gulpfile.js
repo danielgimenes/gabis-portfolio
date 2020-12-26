@@ -6,6 +6,7 @@ var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
 var cleanCSS = require('gulp-clean-css');
 var del = require('del');
+const { src } = require('gulp');
 
 var paths = {
   html: {
@@ -13,7 +14,7 @@ var paths = {
     dest: 'build/'
   },
   styles: {
-    src: 'src/styles/**/*.less',
+    src: 'src/styles/**/*.{less,css}',
     dest: 'build/styles/'
   },
   scripts: {
