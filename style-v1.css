@@ -1,0 +1,293 @@
+/* GENERAL */
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F2F4F9;
+    color: #464646;
+    font-family: 'Roboto', sans-serif;
+    /* hackish */
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.section {
+    flex: 1 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 12px 32px;
+    border: none;
+    outline: 0;
+    -moz-outline: 0;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+strong {
+    font-weight: 700;
+}
+
+
+/* INTRO */
+
+.intro {
+    min-height: 100vh;
+    padding-left: 16vw;
+    padding-right: 10vw;
+}
+
+.intro h1 {
+    font-weight: 300;
+    margin-top: 40vh;
+    flex: 1;
+    font-size: 36px;
+}
+
+.intro strong {
+    font-size: 4rem;
+}
+
+.projects-button {
+    background-color: #702F87;
+    color: white;
+}
+
+.download-cv-button {
+    background-color: #F1F2F4;
+    color: #702F87;
+}
+
+.intro .content-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.intro-image-container {
+    margin-top: 20vh;
+    flex: 1 1;
+}
+
+.intro-image-bg-panel {
+    display: block;
+    width: 540px;
+    height: 630px;
+    background-color: #FFDB70;
+    border-radius: 10px;
+}
+
+.intro-image {
+    margin-left: 16px;
+    margin-top: -124px;
+    /* width: 648px; */
+    height: 754px;
+}
+
+
+/* CONTENT SECTIONS GENERAL */
+
+.content-section {
+    margin: 20vh 0 20vh 0;
+}
+
+.content-section .title-container {
+    display: block;
+    width: 100%;
+    height: 32px;
+    background-color: #FFDB70;
+}
+
+.content-section h2 {
+    font-weight: 300;
+    font-size: 4rem;
+    margin-top: -3rem;
+    letter-spacing: 0.14rem;
+}
+
+.content-section p {
+    flex: 1.2 1;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.14rem;
+    line-height: 130%;
+}
+
+.content-section .content-body {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7.625rem;
+}
+
+.content-section .content-body .separator {
+    width: 8rem
+}
+
+
+/* ABOUT ME */
+
+.about-me {
+    margin-left: 10vw;
+}
+
+.about-me .title-container {
+    border-radius: 10px 0 0 10px;
+    margin-left: 1rem;
+}
+
+.about-me h2 {
+    margin-left: -1rem;
+}
+
+.about-me .content-body {
+    margin-right: 10vw;
+}
+
+.about-me button {
+    background-color: #702F87;
+    color: white;
+}
+
+.about-me-image-container {
+    flex: 1 1;
+}
+
+.about-me-image {
+    height: 365px;
+    width: 486px;
+    border-radius: 10px;
+}
+
+
+/* SKILLS */
+
+.skills {
+    margin-right: 10vw;
+}
+
+.skills .title-container {
+    border-radius: 0 10px 10px 0;
+    margin-right: 1rem;
+}
+
+.skills h2 {
+    text-align: right;
+    margin-right: -1rem;
+}
+
+.skills .content-body {
+    margin-left: 10vw;
+}
+
+
+/* PROJECTS */
+
+.projects {
+    margin-left: 10vw;
+}
+
+.projects .title-container {
+    border-radius: 10px 0 0 10px;
+    margin-left: 1rem;
+}
+
+.projects h2 {
+    margin-left: -1rem;
+}
+
+.projects .content-body {
+    margin-right: 10vw;
+    justify-content: space-around;
+}
+
+.project-container {
+    border: 0.15rem solid #c17eda;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-right: 1em;
+}
+
+.project-container img {
+    width: 100%;
+}
+
+.project-container h3 {
+    text-align: center;
+}
+
+
+/* FOOTER */
+
+footer {
+    color: #FFFFFF;
+    background-color: #702F87;
+    min-height: 50vh;
+    padding-left: 10vw;
+    padding-top: 10vh;
+}
+
+footer h2 {
+    font-weight: 300;
+    font-size: 4rem;
+    letter-spacing: 0.14rem;
+    margin-bottom: 3rem;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.14rem;
+    line-height: 130%;
+}
+
+
+/* @media all and (max-width: 500px) {} */
+
+
+/* DEBUG */
+
+
+/* .intro {
+    background-color: seashell;
+}
+
+.intro h1 {
+    background-color: blue;
+}
+
+.intro aside {
+    background-color: green;
+}
+
+.about-me {
+    background-color: gray;
+}
+
+.about-me h2 {
+    background-color: red;
+}
+
+.about-me .content-body {
+    background-color: blue;
+}
+
+.about-me-image-container {
+    background-color: salmon;
+}
+ */
