@@ -1,6 +1,6 @@
 # Gabi's Portfolio
 
-http://gabiolivalmeida.githubpages.co
+https://gabiolivalmeida.github.io/
 
 ## Env setup
 
