@@ -3,33 +3,14 @@
 @gray: #464646;
 @purple: #702F87;
 @white: #FFFFFF;
+@yellow: #FFDB70;
+
+@md-breakpoint-width: 768px;
 
 body {
-    padding: 0;
-    margin: 0;
     background-color: #F2F4F9;
     color: @gray;
-    font-family: 'Roboto', sans-serif;
-    /* hackish */
-    width: 100vw;
-    overflow-x: hidden;
-}
-
-h1,
-h2 {
-    margin: 0;
-}
-
-.flex-container {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-}
-
-.section {
-    flex: 1 100%;
-    display: flex;
-    flex-direction: column;
+    font-family: 'Roboto', sans-serif
 }
 
 button {
@@ -39,7 +20,6 @@ button {
     padding: 12px 32px;
     border: none;
     outline: 0;
-    -moz-outline: 0;
     cursor: pointer;
     text-decoration: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -49,73 +29,65 @@ strong {
     font-weight: 700;
 }
 
+@media screen and (max-width: @md-breakpoint-width) {
+    .order-first-mobile {
+        order: -1;
+    }
+}
+
 
 /* INTRO */
 
-.intro {
+#intro {
     min-height: 100vh;
-    padding-left: 16vw;
-    padding-right: 10vw;
+    align-items: center;
 
     h1 {
         font-weight: 300;
-        margin-top: 40vh;
-        flex: 1;
-        font-size: 36px;
+        font-size: 36px
     }
 
     strong {
-        font-size: 4rem;
+        font-size: 4rem
     }
 
-    .content-body {
-        display: flex;
-        flex-direction: row;
+    #title-spacer {
+        height: 1rem;
+        width: 10px;
     }
-}
 
-.projects-button {
-    background-color: @purple;
-    color: white;
-}
+    #projects-button {
+        background-color: @purple;
+        color: white;
+    }
 
-.download-cv-button {
-    background-color: #F1F2F4;
-    color: @purple;
-}
+    #download-cv-button {
+        background-color: #F1F2F4;
+        color: @purple;
+    }
 
-.intro-image-container {
-    margin-top: 20vh;
-    flex: 1 1;
-}
-
-.intro-image-bg-panel {
-    display: block;
-    width: 540px;
-    height: 630px;
-    background-color: #FFDB70;
-    border-radius: 10px;
-}
-
-.intro-image {
-    margin-left: 16px;
-    margin-top: -124px;
-    /* width: 648px; */
-    height: 754px;
+    @media screen and (max-width: @md-breakpoint-width) {
+        text-align: center;
+    }
+    
+    #intro-image {
+        background-image: linear-gradient(@yellow 100%, transparent 0);
+        background-position: top 50px right 50px;
+        background-repeat: no-repeat;
+        // position: relative;
+        max-height: 90vh;
+        margin-left: 16px;
+    }
 }
 
 
 /* CONTENT SECTIONS GENERAL */
 
-.content-section {
-    margin: 20vh 0 20vh 0;
-}
-
 .content-section .title-container {
     display: block;
     width: 100%;
     height: 32px;
-    background-color: #FFDB70;
+    background-color: @yellow;
 }
 
 .content-section h2 {
@@ -164,7 +136,7 @@ strong {
 }
 
 .about-me button {
-    background-color: #702F87;
+    background-color: @purple;
     color: @white;
 }
 
@@ -261,37 +233,13 @@ footer p {
 }
 
 
-/* @media all and (max-width: 500px) {} */
-
-
 /* DEBUG */
 
-
-/* .intro {
-    background-color: seashell;
-}
-
-.intro h1 {
-    background-color: blue;
-}
-
-.intro aside {
-    background-color: green;
-}
-
-.about-me {
-    background-color: gray;
-}
-
-.about-me h2 {
-    background-color: red;
-}
-
-.about-me .content-body {
-    background-color: blue;
-}
-
-.about-me-image-container {
-    background-color: salmon;
-}
- */
+ .themed-grid-col {
+     color: black;
+     background-color: #c17eda
+ }
+ 
+ .red {
+     background-color: lightcoral;
+ }
