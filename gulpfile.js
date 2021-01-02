@@ -22,7 +22,7 @@ var paths = {
     dest: 'build/scripts/'
   },
   images: {
-    src: 'src/images/**/*.{jpg,jpeg,png}',
+    src: 'src/images/**/*.{jpg,jpeg,png,gif,svg}',
     dest: 'build/img/'
   }
 };
