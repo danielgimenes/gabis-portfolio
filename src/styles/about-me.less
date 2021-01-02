@@ -7,15 +7,33 @@
     .title-container {
         border-radius: 10px 0 0 10px;
         margin-left: 2rem;
+
+        h2 {
+            margin-left: -1rem;
+        }
     }
 
-    h2 {
-        margin-left: -1rem;
-    }
+    .text-container {
+        padding-left: 2rem;
+        padding-right: 5rem;
 
-    button {
-        background-color: @purple;
-        color: @white;
+        @media screen and (max-width: @md-breakpoint-width) {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        p {
+            margin-bottom: 5rem;
+
+            @media screen and (max-width: @md-breakpoint-width) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        button {
+            background-color: @purple;
+            color: @white;
+        }
     }
 
     .about-me-image {

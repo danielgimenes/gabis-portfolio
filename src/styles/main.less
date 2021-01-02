@@ -46,6 +46,10 @@ strong {
     .order-two-mobile {
         order: 2;
     }
+
+    .order-three-mobile {
+        order: 3;
+    }
 }
 
 
@@ -54,9 +58,18 @@ strong {
 .content-section {
     min-height: 95vh;
 
+    .row {
+        --bs-gutter-y: 5rem;
+        margin-top: 0;
+
+        @media screen and (max-width: @md-breakpoint-width) {
+            --bs-gutter-y: 2rem;
+        }
+    }
+
     .title-container {
         display: block;
-        width: 100%;
+        width: 100vw;
         height: 32px;
         background-color: @yellow;
         margin-top: 10vh;
@@ -71,7 +84,7 @@ strong {
 
     p {
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 300;
         letter-spacing: 0.14rem;
         line-height: 130%;
     }
