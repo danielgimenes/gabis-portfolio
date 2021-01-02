@@ -47,8 +47,8 @@ function html() {
 
 function styles() {
   return gulp.src(paths.styles.src)
+    .pipe(concat('main.less'))
     .pipe(less())
-    .pipe(concat('main.css'))
     .pipe(cleanCSS())
     // pass in options to the stream
     .pipe(rename({

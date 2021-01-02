@@ -1,7 +1,10 @@
 /* GENERAL */
 
-@gray: #464646;
+@darkgray: #464646;
+@gray: #dddada;
+@lightgray: #F1F2F4;
 @purple: #702F87;
+@darkpurple: #5a266d;
 @white: #FFFFFF;
 @yellow: #FFDB70;
 @bg-color: #F6F9FF;
@@ -10,7 +13,7 @@
 
 body {
     background-color: @bg-color;
-    color: @gray;
+    color: @darkgray;
     font-family: 'Roboto', sans-serif
 }
 
@@ -18,16 +21,32 @@ body {
     background-color: @bg-color;
 }
 
-button {
-    border-radius: 10px;
+.btn {
+    border: 0;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 12px 32px;
-    border: none;
-    outline: 0;
-    cursor: pointer;
-    text-decoration: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary {
+    background-color: @purple;
+    color: white;
+
+    &:hover {
+        color: white;
+        background-color: @darkpurple;
+    }
+}
+
+.btn-secondary {
+    background-color: @lightgray;
+    color: @purple;
+
+    &:hover {
+        background-color: @gray;
+        color: @purple;
+    }
 }
 
 strong {
