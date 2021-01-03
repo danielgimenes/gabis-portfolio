@@ -89,9 +89,13 @@ strong {
     .title-container {
         display: block;
         width: 100vw;
-        height: 32px;
+        height: 2rem;
         background-color: @yellow;
         margin-top: 10vh;
+
+        @media screen and (max-width: @md-breakpoint-width) {
+            height: 1rem;
+        }
     }
 
     h2 {
@@ -99,6 +103,11 @@ strong {
         font-size: 4rem;
         margin-top: -3rem;
         letter-spacing: 0.14rem;
+
+        @media screen and (max-width: @md-breakpoint-width) {
+            font-size: 2rem;
+            margin-top: -1.5rem;
+        }
     }
 
     p {
