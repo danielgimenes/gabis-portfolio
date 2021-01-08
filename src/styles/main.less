@@ -81,6 +81,10 @@ strong {
 .content-section {
     min-height: 95vh;
 
+    @media screen and (max-width: @md-breakpoint-width) {
+        min-height: 0;
+    }
+
     .row {
         --bs-gutter-y: 5rem;
         margin-top: 0;
