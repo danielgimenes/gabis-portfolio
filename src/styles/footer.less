@@ -27,6 +27,9 @@ footer {
         overflow: hidden;
 
         img {
+            vertical-align: baseline;
+            margin-bottom: -0.1rem;
+            height: 1.125rem;
             margin-right: 1rem;
         }
 
@@ -35,6 +38,7 @@ footer {
             line-height: 120%;
 
             img {
+                height: 0.9rem;
                 margin-right: 0.5rem;
             }
         }       
@@ -46,6 +50,17 @@ footer {
 
         @media screen and (max-width: @md-breakpoint-width) {
             margin-bottom: 2rem;
+        }
+    }
+
+    .social-icon {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1.8rem;
+        margin-bottom: 4rem;
+
+        @media screen and (max-width: @md-breakpoint-width) {
+            margin-right: 1rem;
         }
     }
 }
