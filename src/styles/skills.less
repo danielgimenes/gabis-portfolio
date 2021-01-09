@@ -1,10 +1,16 @@
 /* SKILLS */
 
 .skills {
+    margin-bottom: 6rem;
+
+    @media screen and (max-width: @md-breakpoint-width) {
+        margin-bottom: 2rem;
+    }
 
     .title-container {
         border-radius: 10px 0 0 10px;
-        margin-left: 4rem;
+        margin-left: 3rem;
+        width: calc(100vw - 3rem);
 
         h2 {
             margin-left: -3rem;
@@ -12,10 +18,141 @@
 
         @media screen and (max-width: @md-breakpoint-width) {
             margin-left: 2rem;
+            width: calc(100vw - 2rem);
 
             h2 {
                 margin-left: -2rem;
             }
         }
+    }
+
+    .text-container {
+        @media screen and (max-width: @md-breakpoint-width) {
+
+            .btn-container {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            .btn {
+                width: 18rem;
+            }
+        }
+
+        p {
+            margin-bottom: 5rem;
+
+            @media screen and (max-width: @md-breakpoint-width) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .skill-container {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+
+        .skill {
+            display: inline-block;
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 300;
+                margin-bottom: 1rem;
+            }
+    
+            img {
+                width: 8rem;
+            }
+        }
+    }
+
+    .softwares-container {
+
+        h3 {
+            font-size: 2.2rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            color: @purple;
+        }
+
+        .software-list-container {
+            border: 0.1rem solid @purple;
+            border-radius: 20px;
+            padding: 4rem 1.5rem 4rem 1.5rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+
+            .software {
+                display: inline-block;
+
+                h3 {
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                    margin-bottom: 1rem;
+                    color: @darkgray;
+                }
+        
+                img {
+                    width: 8rem;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .education-container {
+        h3 {
+            font-size: 2.2rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            color: @purple;
+        }
+
+        table {
+            margin-right: 2rem;
+            // * {
+            // border-color: red;
+            // border-width: 2px;
+            // }
+
+            .spacer {
+                height: 1.2rem;
+            }
+        }
+
+        .education-line-container {
+            height: 5rem;
+
+            .school-container {
+                text-align: right;
+                padding-right: 4rem;
+
+                img {
+                    height: 3rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+
+            p {
+                font-size: 1.3rem;
+                font-weight: 300;
+                color: @darkgray;
+                vertical-align: middle;
+                margin: 0;
+            }
+        }
+
     }
 }
