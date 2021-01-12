@@ -2,17 +2,20 @@
 
 .projects {
 
-    #expansible {
-        overflow: hidden;
-        transition: max-height 1s ease-out;
-    }
-
     #expandButton {
         display: none;
-        width: 100%;
+    }
 
-        @media screen and (max-width: @md-breakpoint-width) {
+    @media screen and (max-width: @md-breakpoint-width) {
+        #expansible {
+            overflow: hidden;
+            transition: max-height 1s ease-out;
+        }
+
+        #expandButton {
+            display: none;
             margin-top: 1rem;
+            width: 18rem;
         }
     }
 

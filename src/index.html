@@ -14,10 +14,13 @@
     <link rel="stylesheet" href="./styles/main.min.css" />
     <script>
         function hideProjects() {
-            var expansible = document.getElementById("expansible");
-            expansible.style.maxHeight = (expansible.clientHeight / 2) + "px";
-            var expandButton = document.getElementById("expandButton");
-            expandButton.style.display = "block";
+            var isMobile = window.matchMedia("(max-width: 768px)").matches;
+            if (isMobile) {
+                var expansible = document.getElementById("expansible");
+                expansible.style.maxHeight = (expansible.clientHeight / 2) + "px";
+                var expandButton = document.getElementById("expandButton");
+                expandButton.style.display = "inline-block";
+            }
         }
         
         function expand() {
@@ -125,7 +128,9 @@
                     </div>
                 </a>
             </div>
-            <button id="expandButton" class="btn btn-secondary col-md-12" onclick="expand();">Ver todos</button>
+            <div style="width: 100%; text-align: center">
+                <button id="expandButton" class="btn btn-secondary col-md-12" onclick="expand();">Ver todos</button>
+            </div>
         </section>
 
         <!-- SKILLS -->
