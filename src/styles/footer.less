@@ -1,12 +1,17 @@
 /* FOOTER */
 
+.footer-container {
+    background-color: @purple;
+}
+
 footer {
     color: @white;
-    background-color: @purple;
     min-height: 60vh;
-    padding-left: 10vw;
     padding-top: 10vh;
-    
+
+    @media screen and (max-width: @md-breakpoint-width) {
+        padding-left: 2rem;
+    }
 
     h2 {
         font-weight: 300;
@@ -19,12 +24,11 @@ footer {
         }
     }
 
-    p {
+    .contact-item {
         font-size: 1.125rem;
         font-weight: 300;
         letter-spacing: 0.14rem;
-        line-height: 130%;
-        overflow: hidden;
+        line-height: 0;
 
         img {
             vertical-align: baseline;
@@ -35,7 +39,6 @@ footer {
 
         @media screen and (max-width: @md-breakpoint-width) {
             font-size: 0.9rem;
-            line-height: 120%;
 
             img {
                 height: 0.9rem;
@@ -46,7 +49,6 @@ footer {
 
     .spacer {
         margin-bottom: 3rem;
-        width: 10px;
 
         @media screen and (max-width: @md-breakpoint-width) {
             margin-bottom: 2rem;
