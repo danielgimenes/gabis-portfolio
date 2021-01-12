@@ -2,6 +2,20 @@
 
 .projects {
 
+    #expansible {
+        overflow: hidden;
+        transition: max-height 1s ease-out;
+    }
+
+    #expandButton {
+        display: none;
+        width: 100%;
+
+        @media screen and (max-width: @md-breakpoint-width) {
+            margin-top: 1rem;
+        }
+    }
+
     .title-container {
         border-radius: 0 10px 10px 0;
         text-align: right;
@@ -23,6 +37,10 @@
     .catalog {
         justify-content: space-evenly;
         padding-bottom: 5rem;
+
+        @media screen and (max-width: @md-breakpoint-width) {
+            padding-bottom: 1rem;
+        }
 
         .catalog-item {
             border: 0.01rem solid #4646464D;

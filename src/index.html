@@ -12,9 +12,29 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/main.min.css" />
+    <script>
+        function hideProjects() {
+            var expansible = document.getElementById("expansible");
+            expansible.style.maxHeight = (expansible.clientHeight / 2) + "px";
+            var expandButton = document.getElementById("expandButton");
+            expandButton.style.display = "block";
+        }
+        
+        function expand() {
+            var expansible = document.getElementById("expansible");
+            expansible.classList.toggle("active");
+            if (expansible.style.maxHeight){
+                expansible.style.maxHeight = null;
+            } else {
+                expansible.style.maxHeight = expansible.scrollHeight + "px";
+            } 
+            var expandButton = document.getElementById("expandButton");
+            expandButton.style.display = "none";
+        }
+    </script>
 </head>
 
-<body>
+<body onload="hideProjects();">
     <div class="main container">
         <!-- INTRO -->
         <a id="intro"></a>
@@ -62,7 +82,7 @@
                     <h2>Projetos e publicações</h2>
                 </div>
             </div>
-            <div class="catalog row gx-4">
+            <div id="expansible" class="catalog row gx-4">
                 <a href="https://gabrielaoliveira-33297.medium.com/ux-na-pr%C3%A1tica-projeto-para-ong-de-resgate-e-doa%C3%A7%C3%A3o-de-animais-2aa74ad53531"
                     target="_blank" class="catalog-item-container col-md-4">
                     <div class="catalog-item">
@@ -105,6 +125,7 @@
                     </div>
                 </a>
             </div>
+            <button id="expandButton" class="btn btn-secondary col-md-12" onclick="expand();">Ver todos</button>
         </section>
 
         <!-- SKILLS -->
