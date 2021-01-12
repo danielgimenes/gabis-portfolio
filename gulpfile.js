@@ -5,6 +5,7 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
 var cleanCSS = require('gulp-clean-css');
+var htmlmin = require('gulp-htmlmin');
 var del = require('del');
 const { src } = require('gulp');
 
@@ -46,6 +47,7 @@ function clean() {
  */
 function html() {
     return gulp.src(paths.html.src)
+      .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
       .pipe(gulp.dest(paths.html.dest));
 }
 
