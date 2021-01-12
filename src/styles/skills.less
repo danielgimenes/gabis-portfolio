@@ -41,11 +41,6 @@
         }
 
         p {
-            margin-bottom: 5rem;
-
-            @media screen and (max-width: @md-breakpoint-width) {
-                margin-bottom: 2rem;
-            }
         }
     }
 
@@ -76,6 +71,10 @@
             font-weight: 300;
             margin-bottom: 2rem;
             color: @purple;
+
+            @media screen and (max-width: @md-breakpoint-width) {
+                font-size: 1.8rem;
+            }
         }
 
         .software-list-container {
@@ -86,6 +85,11 @@
             display: flex;
             justify-content: space-between;
 
+            @media screen and (max-width: @md-breakpoint-width) {
+                padding: 2rem 0 2rem 0;
+                justify-content: space-around;
+            }
+
             .software {
                 display: inline-block;
 
@@ -94,16 +98,28 @@
                     font-weight: 300;
                     margin-bottom: 1rem;
                     color: @darkgray;
+
+                    @media screen and (max-width: @md-breakpoint-width) {
+                        font-size: 1rem;
+                    }
                 }
         
                 img {
                     width: 8rem;
                     margin-bottom: 1rem;
+
+                    @media screen and (max-width: @md-breakpoint-width) {
+                        width: 6rem;
+                    }
                 }
 
                 p {
                     font-size: 1.5rem;
                     font-weight: 500;
+
+                    @media screen and (max-width: @md-breakpoint-width) {
+                        font-size: 1rem;
+                    }
                 }
             }
         }
@@ -115,14 +131,14 @@
             font-weight: 300;
             margin-bottom: 2rem;
             color: @purple;
+
+            @media screen and (max-width: @md-breakpoint-width) {
+                font-size: 1.8rem;
+            }
         }
 
         table {
             margin-right: 2rem;
-            // * {
-            // border-color: red;
-            // border-width: 2px;
-            // }
 
             .spacer {
                 height: 1.2rem;
