@@ -1,8 +1,9 @@
 function hideProjects() {
     var isMobile = window.matchMedia("(max-width: 768px)").matches;
     if (isMobile) {
+        var firstProjectContainer = document.getElementById("catalog-item-container");
         var expansible = document.getElementById("expansible");
-        expansible.style.maxHeight = (expansible.clientHeight / 2) + "px";
+        expansible.style.maxHeight = (firstProjectContainer.clientHeight * 2) + "px";
         var expandButton = document.getElementById("expandButton");
         expandButton.style.display = "inline-block";
     }
