@@ -3,11 +3,11 @@
 @darkgray: #464646;
 @gray: #dddada;
 @lightgray: #F1F2F4;
-@purple: #702F87;
-@darkpurple: #5a266d;
 @white: #FFFFFF;
-@yellow: #FFDB70;
 @bg-color: #F6F9FF;
+@darkblue: #355094; 
+@blue: #4969bb; 
+@transparent: #FFFFFF00;
 
 @md-breakpoint-width: 768px;
 
@@ -34,22 +34,22 @@ a {
 }
 
 .btn-primary {
-    background-color: @purple;
+    background-color: @darkblue;
     color: white;
 
     &:hover {
         color: white;
-        background-color: @darkpurple;
+        background-color: @blue;
     }
 }
 
 .btn-secondary {
-    background-color: @lightgray;
-    color: @purple;
+    background-color: @transparent;
+    color: @darkblue;
 
     &:hover {
         background-color: @gray;
-        color: @purple;
+        color: @darkblue;
     }
 }
 
@@ -95,8 +95,8 @@ strong {
 
     .title-container {
         height: 2rem;
-        background-color: @yellow;
         margin-top: 10vh;
+        color: @darkblue;
 
         @media screen and (max-width: @md-breakpoint-width) {
             height: 1rem;
@@ -123,14 +123,14 @@ strong {
     }
 }
 
-// .red {
-//     background-color: salmon;
-// }
+.red {
+    background-color: salmon;
+}
 
-// .green {
-//     background-color: lightgreen;
-// }
+.green {
+    background-color: lightgreen;
+}
 
-// .blue {
-//     background-color: aquamarine;
-// }
+.blue {
+    background-color: aquamarine;
+}

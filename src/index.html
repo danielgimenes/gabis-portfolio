@@ -12,26 +12,17 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/main.min.css" />
-    <script src="./scripts/main.min.js"></script>
+    <script src="./scripts/main.min.js">
+    </script>
 </head>
 
-<body onload="hideProjects();">
-    <div class="main container">
-        <!-- INTRO -->
-        <a id="intro"></a>
-        <section id="intro" class="row gy-0">
-            <div class="text-container col-md-6">
-                <h1>Olá, sou Gabriela Almeida<br />
-                    <strong>UX Designer</strong><br />
-                </h1>
-                <a href="#projects" class="btn btn-primary">Meus Projetos</a>&nbsp;
-                <a href="doc/Gabi_Almeida_CV_2021.pdf" target="_blank" class="btn btn-secondary">Baixar CV</a>
-            </div>
-            <div class="col-md-6 order-first-mobile">
-                <img id="intro-image" src="img/gabi-poderosa.png" />
-            </div>
-        </section>
+<body>
+    <div class="header">
+        Gabriela Almeida<br/>
+        UX Designer
+    </div>
 
+    <div class="main container">
         <!-- ABOUT ME -->
         <a id="about-me"></a>
         <section class="content-section about-me">
@@ -44,67 +35,12 @@
                     <div class="btn-container">
                         <a href="https://www.linkedin.com/in/gabriela-de-oliveira-e-almeida/" target="_blank"
                             class="btn btn-primary">Meu LinkedIn</a>
+                        <a href="doc/Gabi_Almeida_CV_2021.pdf" target="_blank" class="btn btn-secondary shadow-none">Baixar CV</a>
                     </div>
                 </div>
                 <div class="col-md-6 order-one-mobile">
-                    <img class="about-me-image" src="img/gabi-leitora.png" />
+                    <img class="about-me-image" src="img/gabi-poderosa.png" />
                 </div>
-            </div>
-        </section>
-
-        <!-- PROJECTS -->
-        <a id="projects"></a>
-        <section class="content-section projects">
-            <div class="row">
-                <div class="title-container col-12 order-first-mobile">
-                    <h2>Projetos e publicações</h2>
-                </div>
-            </div>
-            <div id="expansible" class="catalog row gx-4">
-                <a id="catalog-item-container" href="https://gabrielaoliveira-33297.medium.com/ux-na-pr%C3%A1tica-projeto-para-ong-de-resgate-e-doa%C3%A7%C3%A3o-de-animais-2aa74ad53531"
-                    target="_blank" class="catalog-item-container col-md-4">
-                    <div class="catalog-item">
-                        <img src="img/ong-miaudota.png" />
-                        <h3>UX Research: ONG Miaudota</h3>
-                    </div>
-                </a>
-                <a href="https://cassio-almeida.medium.com/ux-e-pol%C3%ADtica-d%C3%A1-certo-941d9c799db1"
-                    target="_blank" class="catalog-item-container col-md-4">
-                    <div class="catalog-item">
-                        <img src="img/voto-consciente.png" />
-                        <h3>UX/UI: Voto Consciente</h3>
-                    </div>
-                </a>
-                <a href="https://gabrielaoliveira-33297.medium.com/como-uma-plataforma-de-streaming-me-incentivou-a-mudar-de-efe4aa44b82e"
-                    target="_blank" class="catalog-item-container col-md-4">
-                    <div class="catalog-item">
-                        <img src="img/reform-hbo-go.png" />
-                        <h3>UX/UI: Reformulação HBO GO</h3>
-                    </div>
-                </a>
-                <a href="https://dribbble.com/Gogabys" target="_blank" class="catalog-item-container col-md-4">
-                    <div class="catalog-item">
-                        <img src="img/daily-ui.png" />
-                        <h3>UI: Daily Challenge</h3>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/pulse/aprendendo-design-thinking-com-o-livro-change-parte-gabriela/?trackingId=dascbFM5REW62LlUjddOdA%3D%3D"
-                    target="_blank" class="catalog-item-container col-md-4">
-                    <div class="catalog-item">
-                        <img src="img/design-thinking-1.png" />
-                        <h3>Artigo: Design Thinking - Pt 1</h3>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/pulse/aprendendo-design-thinking-com-o-livro-change-parte-gabriela-1f/"
-                    target="_blank" class="catalog-item-container col-md-4">
-                    <div class="catalog-item">
-                        <img src="img/design-thinking-2.png" />
-                        <h3>Artigo: Design Thinking - Pt 2</h3>
-                    </div>
-                </a>
-            </div>
-            <div style="width: 100%; text-align: center">
-                <button id="expandButton" class="btn btn-secondary col-md-12" onclick="expand();">Ver todos</button>
             </div>
         </section>
 
@@ -226,32 +162,7 @@
             </div>
         </section>
     </div>
-
-    <div class="footer-container">
-        <div class="container">
-            <!-- FOOTER -->
-            <footer class="row">
-                <h2 class="col-md-12">Contato</h2>
-                <div class="contact-item col-md-6"><img src="img/email-icon.svg"></img>gabiolivalmeida92@gmail.com</div>
-                <div class="contact-item col-md-6"><img src="img/location-icon.svg"></img>Jabaquara, São Paulo - SP
-                </div>
-                <div class="contact-item col-md-6"><img src="img/phone-icon.svg"></img>(11) 99672-4888</div>
-                <div class="spacer col-md-12"></div>
-                <div class="links-container col-md-12">
-                    <a href="https://www.linkedin.com/in/gabriela-de-oliveira-e-almeida/" target="_blank">
-                        <img class="social-icon" alt="LinkedIn" src="img/linkedin-icon.svg"></img>
-                    </a>
-                    <a href="https://gabrielaoliveira-33297.medium.com/" target="_blank">
-                        <img class="social-icon" alt="Medium" src="img/medium-icon.svg"></img>
-                    </a>
-                    <a href="https://dribbble.com/Gogabys" target="_blank">
-                        <img class="social-icon" alt="Dribbble" src="img/dribbble-icon.svg"></img>
-                    </a>
-                </div>
-            </footer>
-        </div>
-    </div>
-
+    
 </body>
 
 </html>
