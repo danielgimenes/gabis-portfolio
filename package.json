@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "gulp-htmlmin": "^5.0.1",
-    "gulp-less": "^4.0.1"
+    "gulp-less": "^4.0.1",
+    "is-svg": "^4.2.2",
+    "yargs-parser": "^5.0.0-security.0"
   }
 }
