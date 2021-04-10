@@ -4,15 +4,18 @@
 
 .brand-primary {
     font-weight: 200;
+    font-size: 1.5rem;
+    letter-spacing: 0.06rem;
 }
 
 .brand-secondary {
     display: inline;
     font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.06rem;
 }
 
 .navbar-light {
-    color: @darkblue;
     height: 7.0rem;
 
     .brand-primary {
@@ -27,6 +30,10 @@
     .nav-item {
         visibility: hidden;
     }
+}
+
+.navbar-light .navbar-brand {
+    color: @darkgray;
 }
 
 .navbar-dark {
@@ -51,7 +58,7 @@
 
 .navbar-dark .navbar-brand,
 .navbar-dark .navbar-text {
-    color: rgba(255,255,255,.8);
+    color: @white;
 }
 
 .navbar-dark .navbar-nav .nav-link {
