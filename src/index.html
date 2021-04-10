@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/main.min.css" />
     <script src="./scripts/main.min.js">
@@ -17,10 +17,35 @@
 </head>
 
 <body>
-    <div class="header">
-        Gabriela Almeida<br/>
-        UX Designer
-    </div>
+    <nav class="navbar header fixed-top navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="brand-primary">Gabriela Almeida</div>
+                <div class="brand-secondary">UX Designer</div>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="projetos.html">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Sobre</a>
+                    </li>
+                </ul>
+                <div class="my-2 my-lg-0">
+                    <a href="https://www.linkedin.com/in/gabriela-de-oliveira-e-almeida/" target="_blank">
+                        <img class="social-icon" alt="LinkedIn" src="img/linkedin-icon.svg"></img>
+                    </a>
+                    <a href="https://gabrielaoliveira-33297.medium.com/" target="_blank">
+                        <img class="social-icon" alt="Medium" src="img/medium-icon.svg"></img>
+                    </a>
+                    <a href="https://dribbble.com/Gogabys" target="_blank">
+                        <img class="social-icon" alt="Dribbble" src="img/dribbble-icon.svg"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <div class="main container">
         <!-- ABOUT ME -->
@@ -31,11 +56,20 @@
                     <h2>Sobre mim</h2>
                 </div>
                 <div class="text-container col-md-6 order-two-mobile align-self-center">
-                    <p>Sempre gostei de aprender sobre pessoas. Por esse motivo segui os últimos cinco anos dentro da carreira de comunicações, período em que conduzi entrevistas e pesquisas de mercado para empresas de diferentes segmentos. Nesse tempo percebi que minha atenção e interesse estavam em entender o comportamento e real sentido por trás das palavras de quem entrevistava. O que aquelas pessoas realmente queriam dizer e não expressavam.<br/><br/>Em 2019, conheci a área de UX e me fascinei pela oportunidade de poder realizar pesquisas de usuários e transformar dados em soluções de impacto positivo. Desde então realizo cursos, projetos pessoais e converso com pessoas da comunidade para me desenvolver e dar esse novo passo na minha carreira como uma profissional UX.</p>
+                    <p>Sempre gostei de aprender sobre pessoas. Por esse motivo segui os últimos cinco anos dentro da
+                        carreira de comunicações, período em que conduzi entrevistas e pesquisas de mercado para
+                        empresas de diferentes segmentos. Nesse tempo percebi que minha atenção e interesse estavam em
+                        entender o comportamento e real sentido por trás das palavras de quem entrevistava. O que
+                        aquelas pessoas realmente queriam dizer e não expressavam.<br /><br />Em 2019, conheci a área de
+                        UX e me fascinei pela oportunidade de poder realizar pesquisas de usuários e transformar dados
+                        em soluções de impacto positivo. Desde então realizo cursos, projetos pessoais e converso com
+                        pessoas da comunidade para me desenvolver e dar esse novo passo na minha carreira como uma
+                        profissional UX.</p>
                     <div class="btn-container">
                         <a href="https://www.linkedin.com/in/gabriela-de-oliveira-e-almeida/" target="_blank"
                             class="btn btn-primary">Meu LinkedIn</a>
-                        <a href="doc/Gabi_Almeida_CV_2021.pdf" target="_blank" class="btn btn-secondary shadow-none">Baixar CV</a>
+                        <a href="doc/Gabi_Almeida_CV_2021.pdf" target="_blank"
+                            class="btn btn-secondary shadow-none">Baixar CV</a>
                     </div>
                 </div>
                 <div class="col-md-6 order-one-mobile">
@@ -162,7 +196,7 @@
             </div>
         </section>
     </div>
-    
+
 </body>
 
 </html>

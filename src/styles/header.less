@@ -1,0 +1,64 @@
+.header {
+    transition: 0.8s;
+}
+
+.brand-primary {
+    font-weight: 200;
+}
+
+.brand-secondary {
+    display: inline;
+    font-weight: 700;
+}
+
+.navbar-light {
+    color: @darkblue;
+    height: 7.0rem;
+
+    .brand-primary {
+        display: block;
+    }
+
+    .social-icon {
+        margin-left: 1rem;
+        width: 3rem;
+    }
+
+    .nav-item {
+        visibility: hidden;
+    }
+}
+
+.navbar-dark {
+    color: @white;
+    background-color: @darkblue;
+    height: 3.5rem;
+
+    .brand-primary {
+        display: inline;
+        margin-right: 1rem;
+    }
+    
+    .social-icon {
+        margin-left: 1rem;
+        width: 2rem;
+    }
+
+    .nav-item {
+        visibility: visible;
+    }
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+
+.navbar-dark .nav-item.active .nav-link,
+.navbar-dark .nav-item:hover .nav-link {
+    color: @white;
+}
