@@ -25,6 +25,10 @@ a {
     background-color: @bg-color;
 }
 
+.container-margin {
+    &:extend(.col-md-1);
+}
+
 .btn {
     border: 0;
     font-weight: 700;
@@ -36,6 +40,8 @@ a {
 .btn-primary {
     background-color: @darkblue;
     color: white;
+    border-radius: 0.7rem;
+    letter-spacing: 0.16rem;
 
     &:hover {
         color: white;
@@ -94,6 +100,7 @@ strong {
     }
 
     .title-container {
+        display: inline-block;
         height: 2rem;
         margin-top: 10vh;
         color: @darkblue;
