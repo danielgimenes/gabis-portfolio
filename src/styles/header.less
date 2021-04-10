@@ -1,75 +1,79 @@
 .header {
-    transition: 0.8s;
-}
 
-.navbar-nav {
-    margin-right: 1rem;
-}
-
-.brand-primary {
-    font-weight: 200;
-    font-size: 1.5rem;
-    letter-spacing: 0.06rem;
-}
-
-.brand-secondary {
-    display: inline;
-    font-weight: 700;
-    font-size: 1.5rem;
-    letter-spacing: 0.06rem;
-}
-
-.navbar-light {
-    height: 7.0rem;
-
-    .brand-primary {
-        display: block;
+    .header-toolbar {
+        transition: 0.8s;
     }
 
-    .social-icon {
-        margin-left: 1rem;
-        width: 3rem;
-    }
-
-    .nav-item {
+    #header-toolbar-menu {
         visibility: hidden;
     }
-}
 
-.navbar-light .navbar-brand {
-    color: @darkgray;
-}
-
-.navbar-dark {
-    color: @white;
-    background-color: @darkblue;
-    height: 3.5rem;
-
-    .brand-primary {
-        display: inline;
+    .navbar-nav {
         margin-right: 1rem;
     }
-    
-    .social-icon {
-        margin-left: 1rem;
-        width: 2rem;
+
+    .brand-primary {
+        font-weight: 200;
+        font-size: 1.5rem;
+        letter-spacing: 0.06rem;
     }
 
-    .nav-item {
-        visibility: visible;
+    .brand-secondary {
+        display: inline;
+        font-weight: 700;
+        font-size: 1.5rem;
+        letter-spacing: 0.06rem;
+    }
+
+    .navbar-light {
+        height: 7.0rem;
+
+        .brand-primary {
+            display: block;
+        }
+
+        .social-icon {
+            margin-left: 1rem;
+            width: 3rem;
+        }
+    }
+
+    .navbar-light .navbar-brand {
+        color: @darkgray;
+    }
+
+    .navbar-light .navbar-nav .active > .nav-link {
+        color: @darkgray;
+    }
+
+    .navbar-dark {
+        color: @white;
+        background-color: @darkblue;
+        height: 3.5rem;
+
+        .brand-primary {
+            display: inline;
+            margin-right: 1rem;
+        }
+        
+        .social-icon {
+            margin-left: 1rem;
+            width: 2rem;
+        }
+    }
+
+    .navbar-dark .navbar-brand,
+    .navbar-dark .navbar-text {
+        color: @white;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: rgba(255,255,255,.5);
+    }
+
+    .navbar-dark .nav-item.active .nav-link,
+    .navbar-dark .nav-item:hover .nav-link {
+        color: @white;
     }
 }
 
-.navbar-dark .navbar-brand,
-.navbar-dark .navbar-text {
-    color: @white;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: rgba(255,255,255,.5);
-}
-
-.navbar-dark .nav-item.active .nav-link,
-.navbar-dark .nav-item:hover .nav-link {
-    color: @white;
-}
