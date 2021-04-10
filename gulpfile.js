@@ -6,6 +6,7 @@ var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
 var cleanCSS = require('gulp-clean-css');
 var htmlmin = require('gulp-htmlmin');
+var htmlImport = require('gulp-html-import');
 var del = require('del');
 const { src } = require('gulp');
 
@@ -13,6 +14,9 @@ var paths = {
   html: {
     src: 'src/**/*.html',
     dest: 'build/'
+  },
+  components: {
+    src: './src/components/',
   },
   docs: {
     src: 'src/doc/**/*.pdf',
@@ -47,6 +51,7 @@ function clean() {
  */
 function html() {
     return gulp.src(paths.html.src)
+      .pipe(htmlImport(paths.components.src))
       .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
       .pipe(gulp.dest(paths.html.dest));
 }
@@ -87,6 +92,7 @@ function watch() {
   gulp.watch(paths.styles.src, styles);
   gulp.watch(paths.images.src, images);
   gulp.watch(paths.html.src, html);
+  gulp.watch(paths.components.src, html);
   gulp.watch(paths.docs.src, docs);
 }
 
