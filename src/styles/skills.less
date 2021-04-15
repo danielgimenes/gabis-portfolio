@@ -1,7 +1,7 @@
 /* SKILLS */
 
 .skills {
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
 
     @media screen and (max-width: @md-breakpoint-width) {
         margin-bottom: 2rem;
@@ -11,62 +11,47 @@
         border-radius: 10px 0 0 10px;
     }
 
-    .text-container {
-        @media screen and (max-width: @md-breakpoint-width) {
-
-            .btn-container {
-                width: 100%;
-                text-align: center;
-                margin-bottom: 1rem;
-            }
-
-            .btn {
-                width: 18rem;
-            }
+    .skills-text {
+        p {
+            font-size: 1.125rem;
+            line-height: 150%;
         }
+    }
+
+    .spacer {
+        height: 8rem;
     }
 
     .skill-container {
         text-align: center;
         display: flex;
         justify-content: space-between;
-        padding-right: 2rem;
+        padding-left: 4rem;
+        margin-bottom: 3rem;
 
         .skill {
             display: inline-block;
             align-self: center;
 
             h3 {
-                font-size: 1rem;
-                font-weight: 300;
-                margin-bottom: 1rem;
+                font-size: 1.125rem;
+                font-weight: 500;
+                color: @darkblue;
+                margin-bottom: 2rem;
             }
     
             img {
                 width: 6rem;
             }
         }
-
-        .skill.highlight {
-            h3 {
-                font-size: 1.5rem;
-                font-weight: 300;
-                margin-bottom: 1rem;
-            }
-    
-            img {
-                width: 8rem;
-            }
-        }
     }
 
     .softwares-container {
-
         h3 {
-            font-size: 2.2rem;
-            font-weight: 300;
-            margin-bottom: 2rem;
+            font-size: 1.5rem;
+            font-weight: 500;
             color: @darkblue;
+            margin-bottom: 2rem;
 
             @media screen and (max-width: @md-breakpoint-width) {
                 font-size: 1.8rem;
@@ -123,10 +108,10 @@
 
     .education-container {
         h3 {
-            font-size: 2.2rem;
-            font-weight: 300;
-            margin-bottom: 2rem;
+            font-size: 1.5rem;
+            font-weight: 500;
             color: @darkblue;
+            margin-bottom: 2rem;
 
             @media screen and (max-width: @md-breakpoint-width) {
                 font-size: 1.8rem;
