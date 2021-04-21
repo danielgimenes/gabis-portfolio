@@ -20,10 +20,12 @@
 
             .btn {
                 width: 18rem;
+                margin-top: 1rem;
             }
         }
 
         p {
+            text-align: justify;
             margin-bottom: 2rem;
 
             @media screen and (max-width: @mobile-breakpoint-width) {
@@ -32,15 +34,23 @@
         }
 
         .btn.btn-primary {
-            margin-right: 1rem
+            margin-right: 1rem;
+            @media screen and (max-width: @mobile-breakpoint-width) {
+                margin-right: 0;
+            }
         }
     }
 
-    .about-me-image {
-        max-height: 80vh;
+    .image-container {
+        text-align: center;
+        .about-me-image {
+            width: 100%;
+            object-fit: contain;
 
-        @media screen and (max-width: @mobile-breakpoint-width) {
-            max-height: 40vh;
+            @media screen and (max-width: @mobile-breakpoint-width) {
+                width: 70%;
+                margin-bottom: 2rem;
+            }
         }
     }
 }

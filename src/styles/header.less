@@ -4,6 +4,10 @@
         transition: 0.8s;
     }
 
+   .header-cta-container {
+       display: flex !important;
+   }
+
     #header-toolbar-menu {
         visibility: hidden;
     }
@@ -16,17 +20,29 @@
         font-weight: 300;
         font-size: 1.5rem;
         letter-spacing: 0.06rem;
+
+        @media screen and (max-width: @mobile-breakpoint-width) {
+            font-size: 0.875rem;
+        }
     }
 
     .brand-secondary {
         display: inline;
         font-weight: 500;
         font-size: 1.5rem;
-        letter-spacing: 0.06rem;
+        letter-spacing: 0.06rem; 
+        
+        @media screen and (max-width: @mobile-breakpoint-width) {
+            font-size: 0.875rem;
+        }
     }
 
     .navbar-light {
         height: 7.0rem;
+
+        @media screen and (max-width: @mobile-breakpoint-width) {
+            height: 5.0rem;
+        }
 
         .brand-primary {
             display: block;
@@ -42,6 +58,12 @@
         color: @darkgray;
     }
 
+    .navbar-light .navbar-nav .nav-link {
+        @media screen and (max-width: @mobile-breakpoint-width) {
+            font-size: 0.875rem;
+        }
+    }
+
     .navbar-light .navbar-nav .active > .nav-link {
         color: @darkgray;
     }
@@ -54,6 +76,12 @@
         .brand-primary {
             display: inline;
             margin-right: 1rem;
+        }
+
+        .brand-secondary {
+            @media screen and (max-width: @mobile-breakpoint-width) {
+                display: none;
+            }
         }
         
         .social-icon {
@@ -69,6 +97,9 @@
 
     .navbar-dark .navbar-nav .nav-link {
         color: rgba(255,255,255,.5);
+        @media screen and (max-width: @mobile-breakpoint-width) {
+            font-size: 0.875rem;
+        }
     }
 
     .navbar-dark .nav-item.active .nav-link,

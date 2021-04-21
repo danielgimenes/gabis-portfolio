@@ -68,7 +68,7 @@ function styles() {
     .pipe(cleanCSS())
     // pass in options to the stream
     .pipe(rename({
-      basename: 'main',
+      basename: 'main2',
       suffix: '.min'
     }))
     .pipe(gulp.dest(paths.styles.dest));
@@ -77,7 +77,7 @@ function styles() {
 function scripts() {
   return gulp.src(paths.scripts.src, { sourcemaps: true })
     .pipe(uglify())
-    .pipe(concat('main.min.js'))
+    .pipe(concat('main2.min.js'))
     .pipe(gulp.dest(paths.scripts.dest));
 }
 

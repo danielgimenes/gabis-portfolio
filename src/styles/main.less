@@ -10,8 +10,11 @@
 @transparent: #FFFFFF00;
 
 @session-spacer-height: 8rem;
-@start-of-content-spacer-height: 20vh;
-@end-of-page-spacer-height: 25vh;
+@session-mobile-spacer-height: 5rem;
+
+@start-of-content-spacer-height: 12rem;
+@end-of-page-spacer-height: 80vh;
+@end-of-page-mobile-spacer-height: 40vh;
 
 @mobile-breakpoint-width: 990px;
 @720p-breakpoint-width: 720px;
@@ -32,7 +35,7 @@ a {
 }
 
 .main.container-fluid {
-    margin-top: 20vh;
+    margin-top: @start-of-content-spacer-height;
 }
 
 .margin-column {
@@ -48,8 +51,8 @@ a {
 .btn {
     border: 0;
     font-weight: 500;
-    font-size: 1.5rem;
-    padding: 12px 32px;
+    font-size: 1.2rem;
+    padding: 8px 24px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -77,6 +80,14 @@ a {
 
 strong {
     font-weight: 500;
+}
+
+.show-only-mobile {
+    visibility: hidden !important;
+
+    @media screen and (max-width: @mobile-breakpoint-width) {
+        visibility: visible !important;
+    }
 }
 
 @media screen and (max-width: @mobile-breakpoint-width) {
@@ -135,14 +146,10 @@ strong {
         font-size: 1.5rem;
         letter-spacing: 0.06rem;
         margin-bottom: 2rem;
-
-        @media screen and (max-width: @mobile-breakpoint-width) {
-            font-size: 1rem;
-        }
     }
 
     p {
-        font-size: 1.125rem; 
+        font-size: 1rem; 
         font-weight: 300;
         letter-spacing: 0.06rem;
         line-height: 130%;

@@ -1,6 +1,6 @@
 window.addEventListener("scroll", function(){
     var headerToolbar = document.querySelector(".header-toolbar");
-    if (window.scrollY > 0) {
+    if (window.scrollY > 5) {
         headerToolbar.classList.add("navbar-dark");
         headerToolbar.classList.remove("navbar-light");
     } else {
