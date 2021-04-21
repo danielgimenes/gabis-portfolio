@@ -9,7 +9,12 @@
 @blue: #4969bb; 
 @transparent: #FFFFFF00;
 
-@md-breakpoint-width: 768px;
+@session-spacer-height: 8rem;
+@start-of-content-spacer-height: 20vh;
+@end-of-page-spacer-height: 25vh;
+
+@mobile-breakpoint-width: 990px;
+@720p-breakpoint-width: 720px;
 
 body {
     background-color: @bg-color;
@@ -30,8 +35,14 @@ a {
     margin-top: 20vh;
 }
 
+.margin-column {
+    @media screen and (max-width: @mobile-breakpoint-width) {
+        display: none;
+    }
+}
+
 .container-margin {
-    &:extend(.col-md-1);
+    &:extend(.col-lg-1);
 }
 
 .btn {
@@ -68,7 +79,7 @@ strong {
     font-weight: 500;
 }
 
-@media screen and (max-width: @md-breakpoint-width) {
+@media screen and (max-width: @mobile-breakpoint-width) {
     .order-first-mobile {
         order: -1;
     }
@@ -88,6 +99,14 @@ strong {
     .hide-mobile {
         display: none !important;
     }
+
+    .col-lg-3 {
+        max-width: none;
+    }
+
+    .col-lg-5 {
+        max-width: none;
+    }
 }
 
 
@@ -99,7 +118,7 @@ strong {
         --bs-gutter-y: 5rem;
         margin-top: 0;
 
-        @media screen and (max-width: @md-breakpoint-width) {
+        @media screen and (max-width: @mobile-breakpoint-width) {
             --bs-gutter-y: 2rem;
         }
     }
@@ -107,7 +126,7 @@ strong {
     .title-container {
         color: @darkblue;
 
-        @media screen and (max-width: @md-breakpoint-width) {
+        @media screen and (max-width: @mobile-breakpoint-width) {
         }
     }
 
@@ -117,7 +136,7 @@ strong {
         letter-spacing: 0.06rem;
         margin-bottom: 2rem;
 
-        @media screen and (max-width: @md-breakpoint-width) {
+        @media screen and (max-width: @mobile-breakpoint-width) {
             font-size: 1rem;
         }
     }
