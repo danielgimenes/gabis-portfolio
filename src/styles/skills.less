@@ -20,7 +20,11 @@
     .skills-text {
         p {
             text-align: justify;
-            line-height: 150%;
+            padding-right: 5rem;
+            @media screen and (max-width: @mobile-breakpoint-width) {
+                padding-right: 0;
+                font-size: 0.75rem;
+            }
         }
     }
 
@@ -117,6 +121,9 @@
                 color: @darkgray;
                 vertical-align: middle;
                 margin: 0;
+                @media screen and (max-width: @mobile-breakpoint-width) {
+                    font-size: 0.75rem;
+                }
             }
         }
 
