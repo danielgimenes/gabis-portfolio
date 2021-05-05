@@ -24,6 +24,10 @@ body {
     color: @darkgray;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    font-size: 1rem;
+    @media screen and (max-width: @mobile-breakpoint-width) {
+        font-size: 0.875rem;
+    }
 }
 
 a {
@@ -149,7 +153,6 @@ strong {
     }
 
     p {
-        font-size: 1rem; 
         font-weight: 300;
         letter-spacing: 0.06rem;
         line-height: 130%;
